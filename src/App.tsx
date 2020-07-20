@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Layout } from 'antd';
 import { hot } from 'react-hot-loader/root';
 import AppButton from './components/common/Button';
-import Navigation from "./components/Navigation";
+import Navigation from './components/Navigation';
 
 const { Content } = Layout;
 
