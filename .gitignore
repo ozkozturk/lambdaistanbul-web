@@ -6,3 +6,4 @@ yarn-error*
 build
 .DS_Store
 .env
+.npmrc
