@@ -9,7 +9,7 @@ const { Content } = Layout;
 const App: FC = () => {
   return (
     <Layout>
-      <Navigation text="navigation" />
+      <Navigation text="navigation top" textBottom="navigation bottom" />
       <Content>
         <AppButton text="liw" />
       </Content>
