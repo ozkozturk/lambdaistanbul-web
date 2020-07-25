@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { StyledNavigation, StyledNavigationBottom } from './styled';
 import { NavigationProps } from './types';
 
-const Navigation: FC<NavigationProps> = ({ text, textBottom }) => {
+const Navigation: FC<NavigationProps> = ({ time, address }) => {
   return (
     <div>
       <StyledNavigation>
@@ -13,12 +13,12 @@ const Navigation: FC<NavigationProps> = ({ text, textBottom }) => {
             <li><a href="/">G</a></li>
             <li><a href="/">in</a></li>
             <li><a href="/">Y</a></li>
-            <li>Mon-Fri: 9:00-19:00; Sat: 10:00-17:00; Sun: Closed</li>
+            <li>{time}</li>
           </ul>
         </div>
         <div>
           <ul>
-            <li>73 Harvey Forest Suite, New York</li>
+            <li>{address}</li>
             <li><a href="/">example@example.com</a></li>
             <li>icon</li>
             <li>icon</li>

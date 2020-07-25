@@ -1,17 +1,17 @@
 import React, { FC } from 'react';
 import { Layout } from 'antd';
 import { hot } from 'react-hot-loader/root';
-import AppButton from './components/common/Button';
 import Navigation from './components/Navigation';
+import HomePage from './components/HomePage';
 
 const { Content } = Layout;
 
 const App: FC = () => {
   return (
     <Layout>
-      <Navigation text="navigation top" textBottom="navigation bottom" />
+      <Navigation time="Mon-Fri: 9:00-19:00; Sat: 10:00-17:00; Sun: Closed" address="73 Harvey Forest Suite, New York" />
       <Content>
-        <AppButton text="liw" />
+        <HomePage text="Community Center" />
       </Content>
     </Layout>
   );

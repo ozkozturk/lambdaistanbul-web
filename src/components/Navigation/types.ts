@@ -1,4 +1,4 @@
 export interface NavigationProps {
-  text: string;
-  textBottom: string;
+  time: string;
+  address: string;
 }
