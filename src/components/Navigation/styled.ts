@@ -26,8 +26,8 @@ export const StyledNavigation = styled.div`
 `;
 export const StyledNavigationMobile = styled.div``;
 export const StyledNavigationBottom = styled.div`
-  height: 100px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   background-color: #FFFFFF;
