@@ -2,6 +2,28 @@ import styled from '@emotion/styled';
 
 export const StyledHomePageCarousel = styled.div`
   position: relative;
+  background-image: url("https://source.unsplash.com/1440x800?people");
+
+  .carousel-page {
+    text-align: center;
+    margin: 80px auto;
+    padding: 20px;
+    color: white;
+
+    h2 {
+      font-size: 80px;
+      color: #ffffff;
+      .colored-headline {
+      display: block;
+       color: #fcb315;
+      }
+    }
+
+    h3 {
+      font-size: 28px;
+      color: #ffffff;
+    }
+  }
 `;
 export const HomePageServices = styled.div`
 

@@ -7,19 +7,17 @@ import AppButton from '../common/Button';
 
 const HomePageCarousel: FC<HomePageCarouselProps> = ({ text }) => {
   return (
-    <div style={{ position: 'relative' }}>
+    <StyledHomePageCarousel>
       <Carousel
         arrows
         dots={false}
         prevArrow={<CaretLeftFilled />}
         nextArrow={<CaretRightFilled />}
       >
-        <div>
+        <div className="carousel-page">
           <h3>{text}</h3>
           <h2>
-            <span>
-              Lorem ipsum dolor
-            </span>
+            <span className="colored-headline">Lorem ipsum dolor</span>
             Lorem ipsum dolor sit
           </h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis incidunt nihil quidem!</p>
@@ -83,7 +81,7 @@ const HomePageCarousel: FC<HomePageCarouselProps> = ({ text }) => {
           </div>
         </div>
       </HomePageServices>
-    </div>
+    </StyledHomePageCarousel>
   );
 };
 
