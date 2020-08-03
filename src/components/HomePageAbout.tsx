@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
+import BorderedHeadline from './common/BorderedHeadline';
 
 interface HomePageAboutProps {
   text: string;
@@ -52,7 +53,7 @@ const HomePageAbout: FC<HomePageAboutProps> = () => {
     <HomePageAboutStyled>
       <div className="home-page-about">
         <div className="home-about-text">
-          <h2>What is Community</h2>
+          <BorderedHeadline text="What is Community" borderColor="red" />
           <p className="dark-grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, eaque!</p>
           <p className="light-grey-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque aut ea eos ex facere maxime, modi nemo nisi quaerat quibusdam recusandae sit, ut vel.
