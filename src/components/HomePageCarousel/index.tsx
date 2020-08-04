@@ -21,7 +21,7 @@ const HomePageCarousel: FC<HomePageCarouselProps> = ({ text }) => {
             Lorem ipsum dolor sit
           </h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis incidunt nihil quidem!</p>
-          <AppButton text="Join">{text}</AppButton>
+          <AppButton text="Join" textColor="white" bgColor="red" buttonWidth="120px">{text}</AppButton>
         </div>
         <div>
           <h3>{text}</h3>

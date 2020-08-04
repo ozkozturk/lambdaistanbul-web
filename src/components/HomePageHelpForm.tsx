@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
-import { Button, Form, Input } from 'antd';
+import { Form, Input } from 'antd';
+import AppButton from './common/Button';
 
 interface HomePageHelpFormProps {
   text: string;
@@ -43,25 +44,6 @@ const HomePageHelpFormStyled = styled.div`
      TextArea {
      height: 140px;
      }
-
-     Button {
-      min-width: 170px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #fcb315;
-      font-size: 16px;
-      line-height: 30px;
-      color: #e0e0e1;
-      border-radius: 10px;
-      border: none;
-      padding: 25px 30px;
-     }
-
-     Button:hover {
-      color: #3a3d44;
-      outline: none;
-     }
   }
 `;
 
@@ -84,9 +66,7 @@ const HomePageHelpForm: FC<HomePageHelpFormProps> = () => {
             <Input.TextArea placeholder="YOUR MESSAGE" />
           </Form.Item>
           <Form.Item colon={false}>
-            <Button>
-              SEND NOW
-            </Button>
+            <AppButton text="SEND NOW!" bgColor="#F6B343" textColor="white" buttonWidth="160px" />
           </Form.Item>
         </Form>
       </div>
