@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { Carousel } from 'antd';
-import { CaretLeftFilled, CaretRightFilled } from '@ant-design/icons';
 import { HomePageServices, StyledHomePageCarousel } from './styled';
 import { HomePageCarouselProps } from './types';
 import AppButton from '../common/Button';
@@ -11,8 +10,6 @@ const HomePageCarousel: FC<HomePageCarouselProps> = ({ text }) => {
       <Carousel
         arrows
         dots={false}
-        prevArrow={<CaretLeftFilled />}
-        nextArrow={<CaretRightFilled />}
       >
         <div className="carousel-page">
           <h3>{text}</h3>
