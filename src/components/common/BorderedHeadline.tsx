@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 import styled from '@emotion/styled';
 import { Typography } from 'antd';
 
@@ -15,7 +15,7 @@ interface AppBorderedTitleProps extends BorderedHeadlineStyledProps {
 const BorderedHeadlineStyled = styled.div`
   padding: 15px 0 15px 30px;
   font-size: 40px;
-  border-left: ${({ borderColor }: BorderedHeadlineStyledProps) => `1px solid ${borderColor}` };
+  border-left: ${({ borderColor }: BorderedHeadlineStyledProps) => `1px solid ${borderColor}`};
 `;
 
 const BorderedHeadline: FC<AppBorderedTitleProps> = ({ text, borderColor, ...rest }) => {

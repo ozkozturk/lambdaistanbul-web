@@ -10,8 +10,8 @@ const HomePage: FC<HomePageProps> = ({ text }) => {
     <div>
       <HomePageCarousel text="Community Center" />
       <HomePageContent>
-        <HomePageAbout text="" />
-        <HomePageHelpForm text="" />
+        <HomePageAbout text={text} />
+        <HomePageHelpForm text={text} />
       </HomePageContent>
     </div>
   );
