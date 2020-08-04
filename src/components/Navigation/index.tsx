@@ -6,25 +6,21 @@ const Navigation: FC<NavigationProps> = ({ time, address }) => {
   return (
     <div>
       <StyledNavigation>
-        <div>
-          <ul>
-            <li><a href="/">F</a></li>
-            <li><a href="/">T</a></li>
-            <li><a href="/">G</a></li>
-            <li><a href="/">in</a></li>
-            <li><a href="/">Y</a></li>
-            <li>{time}</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>{address}</li>
-            <li><a href="/">example@example.com</a></li>
-            <li>icon</li>
-            <li>icon</li>
-            <li>icon</li>
-          </ul>
-        </div>
+        <ul>
+          <li><a href="/">F</a></li>
+          <li><a href="/">T</a></li>
+          <li><a href="/">G</a></li>
+          <li><a href="/">in</a></li>
+          <li><a href="/">Y</a></li>
+          <li>{time}</li>
+        </ul>
+        <ul>
+          <li>{address}</li>
+          <li><a href="/">example@example.com</a></li>
+          <li>icon</li>
+          <li>icon</li>
+          <li>icon</li>
+        </ul>
       </StyledNavigation>
       <StyledNavigationBottom>
         <div>

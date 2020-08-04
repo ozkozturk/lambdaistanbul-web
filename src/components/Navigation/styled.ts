@@ -11,6 +11,8 @@ export const StyledNavigation = styled.div`
   ul {
     display: flex;
     justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
 
     li {
       list-style-type: none;
