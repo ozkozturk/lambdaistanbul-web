@@ -82,25 +82,4 @@ export const StyledNavigationBottom = styled.div`
       }
     }
   }
-
-  .donation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    margin-left: 30px;
-    padding: 14px 10px;
-    background-color: #F3702B;
-    border-radius: 10px;
-
-    a {
-      width: 121px;
-      text-align: center;
-      color: #FFFFFF;
-    }
-
-    a:hover {
-      color: #3A3D44;
-    }
-  }
 `;

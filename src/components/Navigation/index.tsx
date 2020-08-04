@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { StyledNavigation, StyledNavigationBottom } from './styled';
 import { NavigationProps } from './types';
+import AppButton from '../common/Button';
 
 const Navigation: FC<NavigationProps> = ({ time, address }) => {
   return (
@@ -49,9 +50,7 @@ const Navigation: FC<NavigationProps> = ({ time, address }) => {
           </div>
         </div>
         <div>
-          <div className="donation">
-            <a href="/">DONATE US NOW!</a>
-          </div>
+          <AppButton text="DONATE US NOW!" bgColor="#F3702B" textColor="white" buttonWidth="180px" />
         </div>
       </StyledNavigationBottom>
     </div>
