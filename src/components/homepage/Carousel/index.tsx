@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Carousel } from 'antd';
 import { HomePageServices, StyledHomePageCarousel } from './styled';
 import { HomePageCarouselProps } from './types';
-import AppButton from '../common/Button';
+import AppButton from '../../common/Button';
 
 const HomePageCarousel: FC<HomePageCarouselProps> = ({ text }) => {
   return (

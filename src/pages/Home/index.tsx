@@ -1,17 +1,17 @@
 import React, { FC } from 'react';
 import { HomePageContent } from './styled';
 import { HomePageProps } from './types';
-import HomePageCarousel from '../../components/HomePageCarousel';
-import HomePageAbout from '../../components/HomePageAbout';
-import HomePageHelpForm from '../../components/HomePageHelpForm';
+import HomePageCarousel from '../../components/homepage/Carousel';
+import About from '../../components/homepage/About';
+import HelpForm from '../../components/homepage/HelpForm';
 
 const HomePage: FC<HomePageProps> = ({ text }) => {
   return (
     <div>
       <HomePageCarousel text="Community Center" />
       <HomePageContent>
-        <HomePageAbout text={text} />
-        <HomePageHelpForm text={text} />
+        <About text={text} />
+        <HelpForm text={text} />
       </HomePageContent>
     </div>
   );

@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Layout } from 'antd';
 import { hot } from 'react-hot-loader/root';
 import Navigation from './components/Navigation';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/Home';
 
 const { Content } = Layout;
 
