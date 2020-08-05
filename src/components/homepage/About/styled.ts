@@ -13,12 +13,6 @@ const HomePageAboutStyled = styled.div`
     padding: 0 30px;
     background-color: aqua;
 
-    h2 {
-      padding: 15px 0 15px 30px;
-      font-size: 40px;
-      border-left: 2px solid #03a8cb;
-    }
-
     .dark-grey-text {
       font-size: 20px;
       font-style: italic;

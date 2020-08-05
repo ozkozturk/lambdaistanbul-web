@@ -12,13 +12,6 @@ const HomePageHelpFormStyled = styled.div`
     padding: 30px;
     color: #e0e0e1;
 
-    h2 {
-      padding: 15px 0 15px 30px;
-      font-size: 40px;
-      border-left: 2px solid #03a8cb;
-      color: #e0e0e1;
-    }
-
     .ant-input-group {
       display: flex;
       justify-content: space-between;
