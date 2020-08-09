@@ -8,7 +8,6 @@ export const PostPageStyled = styled.div`
 
 export const PostPageContentStyled = styled.div`
   width: 65%;
-  border: 1px solid #e4e4e4;
 
   .post-media {
 
@@ -19,6 +18,7 @@ export const PostPageContentStyled = styled.div`
 
   .post-content {
     padding: 55px;
+    border: 1px solid #e4e4e4;
   }
 
   .entry-header {
@@ -83,5 +83,31 @@ export const PostPageContentStyled = styled.div`
       background-color: rgba(120, 120, 120, 0.2);
       color: crimson;
     }
+  }
+
+  .prev-next-posts {
+    display: flex;
+    margin-top: 40px;
+
+    .prev-post {
+      text-align: left;
+      width: 50%;
+      margin-right: 10px;
+      padding: 55px 60px;
+      background-image: url("https://source.unsplash.com/random?pride");
+    }
+
+    .next-post {
+      text-align: right;
+      width: 50%;
+      margin-left: 10px;
+      padding: 55px 60px;
+      background-image: url("https://source.unsplash.com/random?pride");
+    }
+
+    h3 {
+      color: white;
+    }
+
   }
 `;

@@ -60,6 +60,18 @@ const PostPage: FC<PostPageProps> = ({ text }) => {
           <a href="/">T</a>
           <a href="/">T</a>
         </div>
+        <div className="post-interaction">
+          <div className="prev-next-posts">
+            <a className="prev-post" href="/">
+              <small>Previous Post</small>
+              <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+            </a>
+            <a className="next-post" href="/">
+              <small>Next Post</small>
+              <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+            </a>
+          </div>
+        </div>
       </PostPageContentStyled>
     </PostPageStyled>
   );
