@@ -18,7 +18,7 @@ const App: FC = () => {
             <HomePage text="Community Center" />
           </Route>
           <Route path="/post">
-            <PostPage text="" />
+            <PostPage text="" contentSide="right" />
           </Route>
         </Switch>
       </Content>

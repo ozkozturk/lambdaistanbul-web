@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 const PostPageContentStyled = styled.div`
-  width: 65%;
+  width: 100%;
 
   .post-media {
 
