@@ -6,6 +6,7 @@ const { Title } = Typography;
 
 interface BorderedHeadlineStyledProps {
   borderColor: string;
+  textColor: string;
 }
 
 interface AppBorderedTitleProps extends BorderedHeadlineStyledProps {
@@ -13,15 +14,26 @@ interface AppBorderedTitleProps extends BorderedHeadlineStyledProps {
 }
 
 const BorderedHeadlineStyled = styled.div`
-  padding: 15px 0 15px 30px;
-  font-size: 40px;
-  border-left: ${({ borderColor }: BorderedHeadlineStyledProps) => `1px solid ${borderColor}`};
+
+  h2 {
+    font-size: 40px;
+    margin-top: 20px;
+    padding: 10px 0 10px 30px;
+    border-left: ${({ borderColor }: BorderedHeadlineStyledProps) => `2px solid ${borderColor}`};
+    color: ${({ textColor }: BorderedHeadlineStyledProps) => `${textColor}`};
+  }
 `;
 
-const BorderedHeadline: FC<AppBorderedTitleProps> = ({ text, borderColor, ...rest }) => {
+const BorderedHeadline: FC<AppBorderedTitleProps> = ({ text, textColor, borderColor, ...rest }) => {
   return (
-    <BorderedHeadlineStyled borderColor={borderColor}>
-      <Title {...rest}>
+    <BorderedHeadlineStyled
+      borderColor={borderColor}
+      textColor={textColor}
+    >
+      <Title
+        level={2}
+        {...rest}
+      >
         {text}
       </Title>
     </BorderedHeadlineStyled>

@@ -8,7 +8,7 @@ const About: FC<HomePageAboutProps> = () => {
     <HomePageAboutStyled>
       <div className="home-page-about">
         <div className="home-about-text">
-          <BorderedHeadline text="What is Community" borderColor="red" />
+          <BorderedHeadline text="What is Community" borderColor="#03a8cb" textColor="black" />
           <p className="dark-grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, eaque!</p>
           <p className="light-grey-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque aut ea eos ex facere maxime, modi nemo nisi quaerat quibusdam recusandae sit, ut vel.

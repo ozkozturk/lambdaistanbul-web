@@ -3,12 +3,13 @@ import { Form, Input } from 'antd';
 import HomePageHelpFormStyled from './styled';
 import { HomePageHelpFormProps } from './types';
 import AppButton from '../../common/Button';
+import BorderedHeadline from '../../common/BorderedHeadline';
 
 const HelpForm: FC<HomePageHelpFormProps> = () => {
   return (
     <HomePageHelpFormStyled>
       <div className="help-form">
-        <h2>Do You Need Help?</h2>
+        <BorderedHeadline text="Do You Need Help?" borderColor="#fcb315" textColor="white" />
         <p>Contact us and we help you to solve any of your problem.</p>
         <Form>
           <Input.Group>
