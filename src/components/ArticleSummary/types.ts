@@ -1,4 +1,4 @@
-export type ArticleSummary = {
+export type ArticleSummaryTypes = {
   title: string;
   image: string;
   date: string;
@@ -8,7 +8,7 @@ export type ArticleSummary = {
 
 export interface ArticleSummaryProps {
   index: number;
-  articleSummary: ArticleSummary;
+  articleSummary: ArticleSummaryTypes;
 }
 
 export interface StyledProps {
