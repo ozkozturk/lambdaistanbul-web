@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
 import { For } from 'react-extras';
+import ServicesTabs from '../../components/ServicesTabs';
+import { AppCarouselFullPage } from '../../components/Carousel';
+import About from '../../components/AboutSummary';
+import HelpForm from '../../components/HelpForm';
+import ArticleSummary from '../../components/ArticleSummary';
 import { HomePageContent } from './styled';
 import { HomePageProps } from './types';
-import HomePageCarousel from '../../components/homepage/Carousel';
-import About from '../../components/homepage/About';
-import HelpForm from '../../components/homepage/HelpForm';
-import ArticleSummary from '../../components/homepage/ArticleSummary';
 
 const HomePage: FC<HomePageProps> = ({ text }) => {
   const articleSummaryData = [
@@ -32,9 +33,16 @@ const HomePage: FC<HomePageProps> = ({ text }) => {
     },
   ];
 
+  const carouselData = [
+    { text: 'Et ut adipisicing tempor in dolore.', image: 'http://source.unsplash.com/1920x1080?lgbt+rainbow', url: '' },
+    { text: 'Pariatur reprehenderit sint officia duis aliqua in.', image: 'http://source.unsplash.com/1920x1080?lgbt+rainbow', url: '' },
+    { text: 'Consequat laboris consectetur qui laborum ea non qui sunt incididunt labore nostrud.', image: 'http://source.unsplash.com/1920x1080?lgbt+rainbow', url: '' },
+  ];
+
   return (
-    <div>
-      <HomePageCarousel text="Community Center" />
+    <>
+      <AppCarouselFullPage data={carouselData} />
+      <ServicesTabs />
       <HomePageContent>
         <About text={text} />
         <HelpForm text={text} />
@@ -45,7 +53,7 @@ const HomePage: FC<HomePageProps> = ({ text }) => {
           )}
         />
       </HomePageContent>
-    </div>
+    </>
   );
 };
 

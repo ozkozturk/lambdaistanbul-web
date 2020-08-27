@@ -4,7 +4,7 @@ import { hot } from 'react-hot-loader/root';
 import { Link, Switch, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import HomePage from './pages/Home';
-import PostPage from './pages/PostPage';
+import PostPage from './pages/SinglePost';
 
 const { Content } = Layout;
 
