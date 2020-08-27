@@ -1,9 +1,8 @@
+import { Row } from 'antd';
 import styled from '@emotion/styled';
-import { Row, Col } from 'antd';
+import Paragraph from '../common/Paragraph';
 
 export const Service = styled.div``;
-
-export const StyledCol = styled(Col)``;
 
 export const ServiceInfo = styled.div``;
 
@@ -26,7 +25,7 @@ export const StyledRow = styled(Row)`
     }
 
     a,
-    p {
+    ${Paragraph} {
       color: #ffffff;
     }
 
@@ -34,7 +33,7 @@ export const StyledRow = styled(Row)`
       font-size: 1.5em;
     }
 
-    p {
+    ${Paragraph} {
       line-height: 1.5em;
     }
 

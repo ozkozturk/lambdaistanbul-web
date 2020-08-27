@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
-import { StyledServicesTabs, StyledRow, StyledCol, ServiceImage, ServiceText, ServiceInfo } from './styled';
+import { Col } from 'antd';
+import Paragraph from '../common/Paragraph';
+import { StyledServicesTabs, StyledRow, ServiceImage, ServiceText, ServiceInfo } from './styled';
 import { ServicesInfoTypes } from './types';
 
 const ServicesTabs: FC = () => {
@@ -14,17 +16,17 @@ const ServicesTabs: FC = () => {
     <StyledServicesTabs>
       <StyledRow>
         {servicesInfo.map((serviceInfo) => (
-          <StyledCol span={6} key={serviceInfo.name} style={{ backgroundColor: serviceInfo.color }}>
+          <Col sm={12} xl={6} key={serviceInfo.name} style={{ backgroundColor: serviceInfo.color }}>
             <ServiceInfo>
               <ServiceImage>
                 <img src={serviceInfo.image} alt={serviceInfo.name} />
               </ServiceImage>
               <ServiceText>
                 <a href="/">{serviceInfo.name}</a>
-                <p>{serviceInfo.description || 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}</p>
+                <Paragraph>{serviceInfo.description || 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}</Paragraph>
               </ServiceText>
             </ServiceInfo>
-          </StyledCol>
+          </Col>
         ))}
       </StyledRow>
     </StyledServicesTabs>
