@@ -1,8 +1,9 @@
 import styled from '@emotion/styled';
+import { Menu } from 'antd';
 
-export const StyledNavigation = styled.div`
+export const NavigationTop = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 60px;
   background-color: #3a3d44;
@@ -26,60 +27,36 @@ export const StyledNavigation = styled.div`
   }
 
 `;
+
 export const StyledNavigationMobile = styled.div``;
-export const StyledNavigationBottom = styled.div`
+
+export const NavigationBottom = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #FFFFFF;
-  color: #3A3D44;
+`;
 
-  .logo {
-    width: 20%;
-    display: flex;
-    align-items: center;
+export const Logo = styled.div``;
 
-    a {
-      color: #3A3D44;
-      display: flex;
-      flex-wrap: nowrap;
+export const StyledMenu = styled(Menu)`
+  border: none;
+  background: none;
 
-      span {
-        margin-left: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 34px;
+  li {
+    color: #3a3d44;
+    font-weight: 500;
+    font-size: 1.1em;
 
-        small {
-          margin-top: -10px;
-          margin-left: 2px;
-          font-size: 9px;
-          color: #03a8cb;
-        }
-      }
+    &.ant-menu-item {
+      line-height: 100px;
+      border: none !important;
+      margin-top: 0 !important;
+      top: 0 !important;
     }
-  }
 
-  ul {
-    display: flex;
-    padding-left: 0;
-    margin-bottom: 0;
-
-    li {
-      list-style-type: none;
-
-      a {
-        color: #b2b2b2;
-        padding: 5px;
-        margin: 0 20px;
-        line-height: 30px;
-      }
-
-      a:hover {
-      color: #E85242;
-      }
+    &:hover {
+      color: #e85242 !important;
     }
   }
 `;

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { PostPageProps } from '../../../pages/PostPage/types';
+import { PostPageProps } from '../../../pages/SinglePost/types';
 
 const Article: FC<PostPageProps> = () => {
   return (

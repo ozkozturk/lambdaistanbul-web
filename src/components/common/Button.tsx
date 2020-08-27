@@ -1,24 +1,21 @@
 import React, { FC } from 'react';
 import { Button } from 'antd';
+import { ButtonProps } from 'antd/lib/button/button.d';
 import styled from '@emotion/styled';
 
-interface CustomButtonProps {
-  bgColor: string;
+interface AppButtonProps extends ButtonProps {
+  backgroundColor: string;
   textColor: string;
   buttonWidth: string;
-}
-
-interface AppButtonProps extends CustomButtonProps{
-  text: string;
 }
 
 const ButtonStyled = styled.div`
 
   Button {
     height: 50px;
-    width: ${({ buttonWidth }: CustomButtonProps) => `${buttonWidth}`};
-    background-color: ${({ bgColor }: CustomButtonProps) => `${bgColor}`};
-    color: ${({ textColor }: CustomButtonProps) => `${textColor}`};
+    width: ${({ buttonWidth }: AppButtonProps) => `${buttonWidth}`};
+    background-color: ${({ backgroundColor }: AppButtonProps) => `${backgroundColor}`};
+    color: ${({ textColor }: AppButtonProps) => `${textColor}`};
     border-radius: 10px;
     border: none;
     }
@@ -26,21 +23,21 @@ const ButtonStyled = styled.div`
   Button:hover {
     color: #3a3d44;
     outline: none;
-    background-color: ${({ bgColor }: CustomButtonProps) => `${bgColor}`};
+    background-color: ${({ backgroundColor }: AppButtonProps) => `${backgroundColor}`};
   }
 `;
 
-const AppButton: FC<AppButtonProps> = ({ text, bgColor, textColor, buttonWidth, ...rest }) => {
+const AppButton: FC<AppButtonProps> = ({ children, backgroundColor, textColor, buttonWidth, ...rest }) => {
   return (
     <ButtonStyled
-      bgColor={bgColor}
+      backgroundColor={backgroundColor}
       textColor={textColor}
       buttonWidth={buttonWidth}
     >
       <Button
         {...rest}
       >
-        {text}
+        {children}
       </Button>
     </ButtonStyled>
   );

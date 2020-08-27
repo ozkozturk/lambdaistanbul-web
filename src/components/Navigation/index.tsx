@@ -1,59 +1,70 @@
 import React, { FC } from 'react';
-import { StyledNavigation, StyledNavigationBottom } from './styled';
+import { Menu } from 'antd';
+import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone } from '@fortawesome/pro-solid-svg-icons';
+import { faFacebook, faTwitter, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Button from '../common/Button';
+import Text from '../common/Text';
+import { NavigationTop, NavigationBottom, Logo, StyledMenu } from './styled';
 import { NavigationProps } from './types';
-import AppButton from '../common/Button';
 
-const Navigation: FC<NavigationProps> = ({ time, address }) => {
+const Navigation: FC<NavigationProps> = () => {
   return (
-    <div>
-      <StyledNavigation>
+    <>
+      <NavigationTop>
         <ul>
-          <li><a href="/">F</a></li>
-          <li><a href="/">T</a></li>
-          <li><a href="/">G</a></li>
-          <li><a href="/">in</a></li>
-          <li><a href="/">Y</a></li>
-          <li>{time}</li>
-        </ul>
-        <ul>
-          <li>{address}</li>
-          <li><a href="/">example@example.com</a></li>
-          <li>icon</li>
-          <li>icon</li>
-          <li>icon</li>
-        </ul>
-      </StyledNavigation>
-      <StyledNavigationBottom>
-        <div>
-          <div className="logo">
+          <li>
             <a href="/">
-              <img src="https://via.placeholder.com/55x55.png?text=logo" alt="logo" />
-              <span className="logo-text">
-                Brand
-                <small>COMMUNITY CENTER</small>
-              </span>
+              <Icon icon={faFacebook} />
             </a>
-          </div>
-        </div>
+          </li>
+          <li>
+            <a href="/">
+              <Icon icon={faTwitter} />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <Icon icon={faInstagram} />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <Icon icon={faYoutube} />
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <Icon icon={faEnvelope} />
+            <span>bilgi@lambdaistanbul.org</span>
+          </li>
+          <li>
+            <Icon icon={faPhone} />
+            <span>05555 555 55 55</span>
+          </li>
+        </ul>
+      </NavigationTop>
+      <NavigationBottom>
+        <Logo>
+          <a href="/">
+            <img src="https://via.placeholder.com/200x100.png?text=logo" alt="logo" />
+          </a>
+        </Logo>
+        <StyledMenu mode="horizontal">
+          <Menu.Item>ANASAYFA</Menu.Item>
+          <Menu.Item>DUYURU</Menu.Item>
+          <Menu.Item>DERNEK</Menu.Item>
+          <Menu.Item>BAĞLANTILAR</Menu.Item>
+          <Menu.Item>İLETİŞİM</Menu.Item>
+        </StyledMenu>
         <div>
-          <div className="menu">
-            <ul>
-              <li><a href="/">HOME</a></li>
-              <li><a href="/">PAGES</a></li>
-              <li><a href="/">SERVICES</a></li>
-              <li><a href="/">FEATURES</a></li>
-              <li><a href="/">GALLERY</a></li>
-              <li><a href="/">BLOG</a></li>
-              <li><a href="/">SHOP</a></li>
-              <li><a href="/">CONTACTS</a></li>
-            </ul>
-          </div>
+          <Button backgroundColor="#F3702B" textColor="white" buttonWidth="180px">
+            <Text>BAĞIŞTA BULUNUN!</Text>
+          </Button>
         </div>
-        <div>
-          <AppButton text="DONATE US NOW!" bgColor="#F3702B" textColor="white" buttonWidth="180px" />
-        </div>
-      </StyledNavigationBottom>
-    </div>
+      </NavigationBottom>
+    </>
   );
 };
 
